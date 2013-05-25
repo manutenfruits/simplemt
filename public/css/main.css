@@ -1,0 +1,143 @@
+.bus-data-li{
+	text-align: center;
+}
+
+.bus-data-item{
+	display: inline-block;
+	width: 50%;
+	padding: 0 1em;
+	box-sizing: border-box;
+	text-align: left;
+}
+.bus-data-item > *{
+ 	display:inline-block;
+}
+
+.li-placeholder{
+	text-align: center;
+}
+
+#searchstop{
+	font-size: 4em;
+	height: 85px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: .2em;
+	border: 3px solid #f2f2f2;
+	display: inline-block;
+	width: 68%;
+	outline: none;
+	-webkit-appearance:none;
+	margin-right:4%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+	margin: 0;
+}
+
+#submitstop{
+	display: inline-block;
+	font-size: 2.5em;
+	padding: 0;
+	width: 28%;
+	height: 85px;
+	vertical-align: top;
+	margin: 0;
+	text-align: center;
+	border-radius: .2em;
+	color: white;
+	background-color: #16a085;
+	-webkit-appearance:none;
+	border: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+#fav-panel{
+	background:#2c3e50;
+}
+
+.dual-buttons{
+	display:inline-block;
+	widht:50%;
+}
+
+/*** PAGINA DE PARADAS ***/
+
+#centerOnPosition .ui-icon{
+	background-color: #666;
+	background-color: rgba(0,0,0,.4);
+}
+
+#stopsContent{
+	padding:0;
+	position: absolute;
+	top: 43px;
+	bottom: 0;
+	width: 100%;
+}
+#stopMap{
+	width:100%;
+	height: 100%;
+	background:#f2f2f2;
+}
+
+.infoWindow > div{
+	text-align: center;
+	width:100%;
+}
+
+.iw-stopid{
+	font-size:1.5em;
+}
+
+.lineLabel{
+	display:inline-block;
+	background-color:#3498db;
+	border-radius: .1em;
+	font-size:1.5em;
+	padding:.1em .2em;
+	margin:.1em;
+	color:white;
+	font-weight: bold;
+}
+
+.lineLabel.nightBus{
+	background-color:#2c3e50;
+	color:#f1c40f;
+}
+
+.lineLabel.metroBus{
+	background-color:#c1392b;
+}
+
+#mapMsg{
+	position: absolute;
+	top: 1em;
+	left:50%;
+	margin-left:-25%;
+	width: 50%;
+	text-align: center;
+	padding:.75em;
+	box-sizing:border-box;
+	z-index:999999;
+	overflow: hidden;
+	-webkit-user-select: none;
+	background-color: white;
+	border: 1px solid rgb(171, 171, 171);
+	color:black;
+	box-shadow: 0 3px 5px rgb(171, 171, 171);
+	-webkit-transition:opacity 1s;
+}
+#mapMsg.dismissed{
+	opacity: 0;
+	pointer-events:none;
+}
