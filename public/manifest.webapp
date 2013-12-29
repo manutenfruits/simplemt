@@ -1,0 +1,30 @@
+{
+    "name": "EMT Madrid",
+    "description": "A simple, flat mobile web app to retrieve schedules of EMT (the public bus company of Madrid, Spain)",
+    "launch_path": "/",
+    "version": "0.1.0",
+    "icons": {
+        "128": "/img/icons/icon-128.png",
+        "60": "/img/icons/icon-60.png",
+        "30": "/img/icons/icon-30.png"
+    },
+    "developer": {
+        "name": "Manuel Díez Frutos"
+    },
+    "default_locale": "es",
+    "appcache_path": "/cache.manifest",
+    "chrome": {
+        "navigation": false
+    },
+    "fullscreen": "false",
+    "orientation": ["portrait"],
+    "locales": {
+        "en": {
+            "description": "A simple, flat mobile web app to retrieve schedules of EMT (the public bus company of Madrid, Spain)"
+        },
+        "es": {
+            "description": "Consulte los tiempos de llegada de los autobuses de la EMT de Madrid."
+        }
+    },
+    "type": "web"
+}

@@ -294,7 +294,7 @@ function showLocation(){
 		map: emt.map,
 		title:"Ubicación actual",
 		icon:{
-			url: 'location.png',
+			url: 'img/location.png',
 			scaledSize: new google.maps.Size(12, 12),
 			size: new google.maps.Size(34, 34),
 			origin: new google.maps.Point(0,0),
@@ -362,7 +362,7 @@ function drawStops(data){
 				title:"Parada  " + item.IdStop[0],
 				position: new google.maps.LatLng(item.CoordinateY[0], item.CoordinateX[0]),
 				icon:{
-					url: 'marker.png',
+					url: 'img/marker.png',
 					scaledSize: new google.maps.Size(12, 12),
 					size: new google.maps.Size(32, 32),
 					origin: new google.maps.Point(0,0),
