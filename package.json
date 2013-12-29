@@ -1,12 +1,32 @@
 {
-	"name": "nodemt",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"start": "node app"
-	},
-	"dependencies": {
-		"express": "*",
-		"xml2js": "*"
-	}
+  "name": "nodemt",
+  "version": "0.0.1",
+  "description": "Backend for SimpleEMT",
+  "keywords": [
+    "EMT",
+    "Madrid"
+  ],
+  "author": {
+    "name": "Manuel Diez Frutos",
+    "email": "manutenfruits@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openshift/origin-server"
+  },
+
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+
+  "dependencies": {
+    "express": "*",
+    "xml2js": "*"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+
+  "private": true,
+  "main": "app.js"
 }
