@@ -4,6 +4,8 @@ var idClient = "WEB.PORTALMOVIL.OTROS";
 var passKey = "0810DDE4-02FC-4C0E-A440-1BD171B397C8";
 var querystring = require("querystring");
 var parseString = require("xml2js").parseString;
+var MANIFEST_FILE = "public/manifest.webapp";
+
 
 exports.getArriveStop= function(req, res){
 
@@ -91,4 +93,12 @@ exports.getStopsFromXY= function(req, res){
 		console.error(e);
 	});
 
+}
+
+exports.getManifest = function(req, res) {
+	var fileStream;
+
+	res.writeHead(200, {'Content-Type': 'application/x-web-app-manifest+json'});
+	fs.createReadStream(MANIFEST_FILE);
+    fileStream.pipe(res);
 }

@@ -29,6 +29,7 @@ app.configure('development', function(){
 
 app.get('/api/getArriveStop', routes.getArriveStop);
 app.get('/api/getStopsFromXY', routes.getStopsFromXY);
+app.get('manifest.webapp', routes.getManifest);
 
 server.listen(app.get('port'), app.get('ipaddress'), function(){
 	console.log("Express server listening on port " + app.get('port'));
